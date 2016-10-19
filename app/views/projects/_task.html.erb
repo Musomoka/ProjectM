@@ -1,0 +1,11 @@
+<div class= "task">
+    <%new_or_exising = task.new_record? ? 'new': 'exisintg' %>
+    <%prefix = "project[#{new_or_exisint}_task_attributes][]"
+    
+    fields_for prefix,  task do |task_form| %>
+    <p>
+        
+    </p>
+    
+    
+</div>

@@ -1,0 +1,12 @@
+<%=@company.name%>
+<%@company.id%>
+
+<%= form_for ([@company,@project])  do |f| %>
+  
+    <%= f.text_field :name %>
+
+    <%= f.submit %>
+ 
+  </p>
+  </div>
+<% end %>

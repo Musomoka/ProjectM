@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong>Year end:</strong>
+  <%= @company.year_end %>
+</p>
+
+<p>
+  <strong>Tax number:</strong>
+  <%= @company.tax_number %>
+</p>
+
+<p>
+  <strong>Address 1:</strong>
+  <%= @company.address_1 %>
+</p>
+
+<p>
+  <strong>Address 2:</strong>
+  <%= @company.address_2 %>
+</p>
+
+<p>
+  <strong>Address 3:</strong>
+  <%= @company.address_3 %>
+</p>
+
+<p>
+  <strong>Address 44:</strong>
+  <%= @company.address_44 %>
+</p>
+
+<%= link_to 'Edit', edit_company_path(@company) %> 
+<%= link_to 'Back', companies_path %>
+<%= link_to 'Project', company_projects_url(@company) %>

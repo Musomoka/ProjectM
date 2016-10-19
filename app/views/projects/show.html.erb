@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<div id ="tasks">
+  <P>Tasks</P>
+  <%= form_for @project  do |f| %>
+     <%=f.fields_for :task do |ts| %>
+       <%= ts.label :name%>
+       <%= ts.text_field :name %>
+     
+       <%end%>
+         <%= f.submit %>
+      <%end%>
+       
+  </p>
+  <p>
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
